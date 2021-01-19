@@ -3,22 +3,14 @@ import githubApi from './github-api.js';
 	defaultVaultSetting: {
 		active: 'github',
 		github: {
-			user: 'alphonseli',
+			user: '',
 			userInfo:null,
-			token: '199efe9c7b99e0820b9b14edc666e03f40de35e9',
+			token: '',
 			repo: ' ',
 			files:[],
 			secret:'',
 		},
 	},
-	// liyuanVaultSetting: {
-	// 	active: 'github',
-	// 	github: {
-	// 		user: 'alphonseli',
-	// 		token: '199efe9c7b99e0820b9b14edc666e03f40de35e9',
-	// 		repo: 'myVault',
-	// 	},
-	// },
 	currentSetting:null,
 	loadSetting() {
 		return new Promise((resolve, reject) => {
